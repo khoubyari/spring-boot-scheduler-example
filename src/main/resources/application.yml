@@ -1,0 +1,14 @@
+spring:
+  profiles.active: default
+
+---
+spring:
+  profiles: default
+  jmx.enabled: false
+  
+example:
+  scheduledJob: 
+    enabled: true
+  incoming:
+    comments:
+      dir: /tmp/comments
