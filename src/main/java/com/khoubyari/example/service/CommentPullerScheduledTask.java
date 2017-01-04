@@ -39,7 +39,6 @@ public class CommentPullerScheduledTask {
 			"HH:mm:ss");
 
 	@Scheduled(fixedRate = 30000)  // every 30 seconds
-	// cron = "${pvweb.scheduledJob.cron}")
 	public void pullRandomComment() {
 		if (!scheduledJobEnabled) {
 			return;
